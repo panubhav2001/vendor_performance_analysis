@@ -1,5 +1,5 @@
 # 🧾 Vendor Performance Analysis  
-**SQL | Python | Power BI | AI-Assistance**  
+**SQL | Python | Power BI**  
 A complete data analytics pipeline to evaluate and optimize vendor performance in the retail/wholesale sector.
 
 ---
@@ -21,28 +21,26 @@ This project analyzes vendor contribution across sales, profitability, inventory
 ---
 
 ## 🛠️ Tools & Tech
-- **MySQL:** Central data warehouse  
+- **MS SQL Server:** Central data warehouse  
 - **Python:** ETL, data wrangling (Pandas, NumPy, SQLAlchemy)  
 - **SQL:** Data joining, transformation, aggregation  
 - **Power BI:** Dashboards, KPI visualization  
 - **Jupyter Notebooks:** EDA & visualization  
-- **AI Tools:** ChatGPT, Copilot, Gemini, Claude – used for code, logic checks, and visuals  
 - **GitHub:** Version control & reproducibility  
 
 ---
-
+```plaintext
 ## 📁 Project Structure
 │
 ├── Data/                              # Raw CSV files
-├── logs/                              # ETL logs (Monitor ETL process for information, warning , error that helps in Debugging).
-├── ingestion_db.py                    # Python ETL script
+├── logs/                              # ETL logs 
+├── data_ingestion.py                  # Python ETL script
 ├── get_vendors_summary.py             # Feature aggregation script
 ├── Exploratory Data Analysis.ipynb    # Python EDA notebook (All company's raw csv data files)
 ├── Vendor Performance Analysis.ipynb  # Additional analysis (EDA, cleaning, feature engineering, reaearch questions & insights from vendors_final_summary)
 ├── Visualizing Insights.pbix          # Power BI dashboard file
-├── Final Reporting.pdf                # Final report with findings and recommendations
 └── README.md                          # Project overview and documentation (you're here!)
-
+```
 
 ---
 
@@ -60,9 +58,9 @@ This project analyzes vendor contribution across sales, profitability, inventory
 ---
 
 ## 📊 Key Insights
-- 🔴 **High Margin, Low Sales:** Low performers show 42.3% avg margin vs. top vendors’ 23.0%  
-- 📦 **Unsold Stock:** $35.2M in idle inventory → urgent clearance or strategy shift  
-- 📉 **Over-Reliance:** Top 10 vendors = 66% of purchases → major risk  
+- 🔴 **High Margin, Low Sales:** Low performers show 41.53% avg margin vs. top vendors’ 31.17%  
+- 📦 **Unsold Stock:** $2.69M in idle inventory → urgent clearance or strategy shift  
+- 📉 **Over-Reliance:** Top 10 vendors = 65% of purchases → major risk  
 - 💸 **Bulk Buying Advantage:** Up to 72% unit cost reduction  
 - 📈 **Turnover ≠ Profit:** Weak correlation (-0.04) between stock turnover and gross profit
 
